@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Products</title>
+</head>
+<body>
+ <h2>List Products</h2>
+ <% for(const product of products) { %>
+ <h3>Name: <%= product.name %></h3>
+ <p>Price: <%= product.price %></p>
+ <p>Producer: <%= product.producer %></p>
+ <p> Avatar: <%= product.avatar %></p></br>
+ <% } %>
+
+ <!-- phantrang -->
+ <div class="pagination">
+
+    <a href="#">«</a>
+   
+    <a href="http://localhost:3000/product/list?offset=0&limit=3">1</a>
+   
+    <a href="http://localhost:3000/product/list?offset=1&limit=3">2</a>
+   
+    <a href="http://localhost:3000/product/list?offset=2&limit=3">3</a>
+   
+    <a href="http://localhost:3000/product/list?offset=3&limit=3">4</a>
+   
+    <a href="http://localhost:3000/product/list?offset=4&limit=3">5</a>
+   
+    <a href="http://localhost:3000/product/list?offset=5&limit=3">6</a>
+   
+    <a href="#">»</a>
+   
+    </div>
+</body>
+</html>
